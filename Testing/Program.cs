@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MySql.Data.MySqlClient;
 using Testing;
+using Testing.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
