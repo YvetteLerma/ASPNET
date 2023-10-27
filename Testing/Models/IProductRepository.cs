@@ -5,12 +5,17 @@ namespace Testing.Models
 {
 	public interface IProductRepository
 	{
+        public Product AssignCategory();
 
-		public IEnumerable<Product> GetAllProducts();
+        public IEnumerable<Product> GetAllProducts();
 
-		public Product GetProduct(int id);
+        public IEnumerable<Category> GetCategories();
 
-		public void UpdateProduct(Product product);
+        public Product GetProduct(int id);
+
+        public void InsertProduct(Product productToInsert);
+
+        public void UpdateProduct(Product product);
 	}
 }
 
